@@ -1,0 +1,28 @@
+PODS:
+  - DisPlayers-Audio-Visualizers (0.1.1):
+    - EZAudio (~> 1.1.4)
+  - EZAudio (1.1.5):
+    - EZAudio/Full (= 1.1.5)
+  - EZAudio/Core (1.1.5)
+  - EZAudio/Full (1.1.5):
+    - EZAudio/Core
+    - TPCircularBuffer (= 1.1)
+  - TPCircularBuffer (1.1)
+
+DEPENDENCIES:
+  - DisPlayers-Audio-Visualizers (~> 0.1.1)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - DisPlayers-Audio-Visualizers
+    - EZAudio
+    - TPCircularBuffer
+
+SPEC CHECKSUMS:
+  DisPlayers-Audio-Visualizers: 70a034a7d1bb3f93632315bcc1546670b373b3be
+  EZAudio: 3b1cb4b6d7ebca68f0c2478576d75940aad4aa99
+  TPCircularBuffer: 4960a919e667280f7f38963d771f45871b64fe62
+
+PODFILE CHECKSUM: f7c0e9821adb004f754c24f220cb526f05396bce
+
+COCOAPODS: 1.5.3

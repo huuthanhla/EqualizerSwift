@@ -12,6 +12,9 @@
 		13B6309121AD392900E52DBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13B6308F21AD392900E52DBE /* Main.storyboard */; };
 		13B6309321AD392B00E52DBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B6309221AD392B00E52DBE /* Assets.xcassets */; };
 		13B6309621AD392B00E52DBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13B6309421AD392B00E52DBE /* LaunchScreen.storyboard */; };
+		13B630A121AD39FF00E52DBE /* Con_duyen_intro.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 13B630A021AD39FF00E52DBE /* Con_duyen_intro.m4a */; };
+		13B630A321AD3CDF00E52DBE /* EqualizerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B630A221AD3CDF00E52DBE /* EqualizerView.swift */; };
+		D1DF2DEFB73224353C044265 /* Pods_AudioVisualizer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1287FB8D11581ECCE5B9B3A /* Pods_AudioVisualizer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,13 @@
 		13B6309221AD392B00E52DBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13B6309521AD392B00E52DBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		13B6309721AD392B00E52DBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13B6309D21AD393A00E52DBE /* AudioVisualizer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AudioVisualizer-Bridging-Header.h"; sourceTree = "<group>"; };
+		13B630A021AD39FF00E52DBE /* Con_duyen_intro.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Con_duyen_intro.m4a; sourceTree = "<group>"; };
+		13B630A221AD3CDF00E52DBE /* EqualizerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EqualizerView.swift; sourceTree = "<group>"; };
+		13B630AB21AD44DE00E52DBE /* EZAudioiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EZAudioiOS.framework; path = Carthage/Build/iOS/EZAudioiOS.framework; sourceTree = "<group>"; };
+		4D4BFAA49F090D557CDFC415 /* Pods-AudioVisualizer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioVisualizer.release.xcconfig"; path = "Pods/Target Support Files/Pods-AudioVisualizer/Pods-AudioVisualizer.release.xcconfig"; sourceTree = "<group>"; };
+		E1287FB8D11581ECCE5B9B3A /* Pods_AudioVisualizer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AudioVisualizer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFFA99B5299C3CEAEBE68E69 /* Pods-AudioVisualizer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioVisualizer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AudioVisualizer/Pods-AudioVisualizer.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1DF2DEFB73224353C044265 /* Pods_AudioVisualizer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +51,8 @@
 			children = (
 				13B6308A21AD392900E52DBE /* AudioVisualizer */,
 				13B6308921AD392900E52DBE /* Products */,
+				6E4ECE62D734AC8DF51D980C /* Pods */,
+				32229BED65A1D65E5AA62C1C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +69,33 @@
 			children = (
 				13B6308B21AD392900E52DBE /* AppDelegate.swift */,
 				13B6308D21AD392900E52DBE /* ViewController.swift */,
+				13B630A221AD3CDF00E52DBE /* EqualizerView.swift */,
 				13B6308F21AD392900E52DBE /* Main.storyboard */,
 				13B6309221AD392B00E52DBE /* Assets.xcassets */,
 				13B6309421AD392B00E52DBE /* LaunchScreen.storyboard */,
 				13B6309721AD392B00E52DBE /* Info.plist */,
+				13B6309D21AD393A00E52DBE /* AudioVisualizer-Bridging-Header.h */,
+				13B630A021AD39FF00E52DBE /* Con_duyen_intro.m4a */,
 			);
 			path = AudioVisualizer;
+			sourceTree = "<group>";
+		};
+		32229BED65A1D65E5AA62C1C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13B630AB21AD44DE00E52DBE /* EZAudioiOS.framework */,
+				E1287FB8D11581ECCE5B9B3A /* Pods_AudioVisualizer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6E4ECE62D734AC8DF51D980C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FFFA99B5299C3CEAEBE68E69 /* Pods-AudioVisualizer.debug.xcconfig */,
+				4D4BFAA49F090D557CDFC415 /* Pods-AudioVisualizer.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +105,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B6309A21AD392B00E52DBE /* Build configuration list for PBXNativeTarget "AudioVisualizer" */;
 			buildPhases = (
+				CE32DD80F8CE2510E614987E /* [CP] Check Pods Manifest.lock */,
 				13B6308421AD392900E52DBE /* Sources */,
 				13B6308521AD392900E52DBE /* Frameworks */,
 				13B6308621AD392900E52DBE /* Resources */,
+				13B630AD21AD44E300E52DBE /* ShellScript */,
+				DBECC187A27C0914D7ADB384 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -96,6 +133,7 @@
 				TargetAttributes = {
 					13B6308721AD392900E52DBE = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -124,17 +162,87 @@
 			files = (
 				13B6309621AD392B00E52DBE /* LaunchScreen.storyboard in Resources */,
 				13B6309321AD392B00E52DBE /* Assets.xcassets in Resources */,
+				13B630A121AD39FF00E52DBE /* Con_duyen_intro.m4a in Resources */,
 				13B6309121AD392900E52DBE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		13B630AD21AD44E300E52DBE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+		CE32DD80F8CE2510E614987E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AudioVisualizer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DBECC187A27C0914D7ADB384 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AudioVisualizer/Pods-AudioVisualizer-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DisPlayers-Audio-Visualizers/DisPlayers_Audio_Visualizers.framework",
+				"${BUILT_PRODUCTS_DIR}/EZAudio/EZAudio.framework",
+				"${BUILT_PRODUCTS_DIR}/TPCircularBuffer/TPCircularBuffer.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DisPlayers_Audio_Visualizers.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EZAudio.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TPCircularBuffer.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AudioVisualizer/Pods-AudioVisualizer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		13B6308421AD392900E52DBE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13B630A321AD3CDF00E52DBE /* EqualizerView.swift in Sources */,
 				13B6308E21AD392900E52DBE /* ViewController.swift in Sources */,
 				13B6308C21AD392900E52DBE /* AppDelegate.swift in Sources */,
 			);
@@ -280,17 +388,27 @@
 		};
 		13B6309B21AD392B00E52DBE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFFA99B5299C3CEAEBE68E69 /* Pods-AudioVisualizer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DAB2NZFLN5;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = AudioVisualizer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.xerox.AudioVisualizer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AudioVisualizer/AudioVisualizer-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -298,17 +416,26 @@
 		};
 		13B6309C21AD392B00E52DBE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D4BFAA49F090D557CDFC415 /* Pods-AudioVisualizer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DAB2NZFLN5;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = AudioVisualizer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.xerox.AudioVisualizer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AudioVisualizer/AudioVisualizer-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

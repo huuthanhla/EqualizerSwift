@@ -1,0 +1,6 @@
+framework module EZAudioiOS {
+  umbrella header "EZAudioiOS.h"
+
+  export *
+  module * { export * }
+}
