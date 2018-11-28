@@ -134,6 +134,11 @@
 					13B6308721AD392900E52DBE = {
 						CreatedOnToolsVersion = 10.0;
 						LastSwiftMigration = 1000;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
